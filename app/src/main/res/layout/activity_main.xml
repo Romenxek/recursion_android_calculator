@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#f7f7f7">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/tvAngleMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="DEG"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            android:textSize="14sp" />
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/treeList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="6dp" />
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button android:id="@+id/btnDeg" android:text="DEG"
+            android:layout_width="0dp" android:layout_height="64dp" android:layout_weight="1" />
+        <Button android:id="@+id/btnRad" android:text="RAD"
+            android:layout_width="0dp" android:layout_height="64dp" android:layout_weight="1" />
+        <Button android:id="@+id/btnSign" android:text="+/-"
+            android:layout_width="0dp" android:layout_height="64dp" android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button android:id="@+id/btnSin" android:text="sin"
+            android:layout_width="0dp" android:layout_height="64dp"
+            android:layout_weight="1" />
+        <Button android:id="@+id/btnCos" android:text="cos"
+            android:layout_width="0dp" android:layout_height="64dp"
+            android:layout_weight="1" />
+        <Button android:id="@+id/btnDot" android:text="."
+            android:layout_width="0dp" android:layout_height="64dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button android:id="@+id/btn1" android:text="1"
+            android:layout_width="0dp" android:layout_height="64dp"
+            android:layout_weight="1" />
+
+        <Button android:id="@+id/btn2" android:text="2"
+            android:layout_width="0dp" android:layout_height="64dp"
+            android:layout_weight="1" />
+
+        <Button android:id="@+id/btn3" android:text="3"
+            android:layout_width="0dp" android:layout_height="64dp"
+            android:layout_weight="1" />
+
+        <Button android:id="@+id/btnAdd" android:text="+"
+            android:layout_width="0dp" android:layout_height="64dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button android:id="@+id/btn4" android:text="4"
+            android:layout_width="0dp" android:layout_height="64dp"
+            android:layout_weight="1" />
+        <Button android:id="@+id/btn5" android:text="5"
+            android:layout_width="0dp" android:layout_height="64dp"
+            android:layout_weight="1" />
+        <Button android:id="@+id/btn6" android:text="6"
+            android:layout_width="0dp" android:layout_height="64dp"
+            android:layout_weight="1" />
+        <Button android:id="@+id/btnSub" android:text="-"
+            android:layout_width="0dp" android:layout_height="64dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button android:id="@+id/btn7" android:text="7"
+            android:layout_width="0dp" android:layout_height="64dp"
+            android:layout_weight="1" />
+        <Button android:id="@+id/btn8" android:text="8"
+            android:layout_width="0dp" android:layout_height="64dp"
+            android:layout_weight="1" />
+        <Button android:id="@+id/btn9" android:text="9"
+            android:layout_width="0dp" android:layout_height="64dp"
+            android:layout_weight="1" />
+        <Button android:id="@+id/btnMul" android:text="×"
+            android:layout_width="0dp" android:layout_height="64dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button android:id="@+id/btn0" android:text="0"
+            android:layout_width="0dp" android:layout_height="64dp"
+            android:layout_weight="2" />
+        <Button android:id="@+id/btnEq" android:text="="
+            android:layout_width="0dp" android:layout_height="64dp"
+            android:layout_weight="1" />
+        <Button android:id="@+id/btnDiv" android:text="÷"
+            android:layout_width="0dp" android:layout_height="64dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+    <Button android:id="@+id/btnDel" android:text="DEL"
+        android:layout_width="match_parent" android:layout_height="64dp"
+        android:layout_weight="1" />
+
+    <Button android:id="@+id/btnClear" android:text="C"
+        android:layout_width="match_parent" android:layout_height="64dp"
+        android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>
